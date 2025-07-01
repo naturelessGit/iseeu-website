@@ -1,0 +1,165 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace; /* Monospace for the hacker vibe */
+}
+
+body {
+  background-color: #121212; /* Dark background for terminal look */
+  color: #f0f0f0; /* Light text for contrast */
+  line-height: 1.6;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  color: #64ffda; /* Neon hacker green for headings */
+}
+
+a {
+  text-decoration: none;
+  color: #64ffda; /* Neon green links */
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header h2 {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+section {
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 0 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+/* Buttons */
+button {
+  background-color: transparent;
+  color: #64ffda;
+  border: 2px solid #64ffda;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #64ffda;
+  color: #121212;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+  margin: 20px 0;
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 1.1rem;
+}
+
+ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #64ffda; /* Green bullet points */
+}
+
+/* Code Block Styling */
+pre {
+  background-color: #1e1e1e; /* Dark background for code blocks */
+  color: #f0f0f0;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 1rem;
+}
+
+pre code {
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #64ffda; /* Neon green for section headings */
+}
+
+/* Links in paragraphs */
+p a {
+  color: #64ffda;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  pre {
+    padding: 12px;
+  }
+}
